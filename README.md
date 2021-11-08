@@ -1,11 +1,12 @@
 # SHA256
 
-Implementation of hash function SHA-256.
+## Implementation of hash function SHA-256.
 
 ---
 
 ### Compiling
 
+---
 
 ```
 git clone https://github.com/yhetman/SHA256
@@ -21,11 +22,15 @@ make re
 
 ### Usage
 
+---
+
 ```
 Usage:  ./SHA256 -i ./input_file -o ./output_file
 ```
 
 ### Options and flags
+
+---
 
 ```
 
