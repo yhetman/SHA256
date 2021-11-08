@@ -80,6 +80,7 @@ transform_sha256(t_sha256 *hash, uint8_t *buffer)
         hash->state[i] = hash->state[i] + S[i];
 }
 
+
 void
 init_sha256(t_sha256 *hash)
 {
@@ -94,6 +95,7 @@ init_sha256(t_sha256 *hash)
     hash->state[6] = 0x1F83D9ABUL;
     hash->state[7] = 0x5BE0CD19UL;
 }
+
 
 void
 update_sha256(t_sha256 *hash, void *buffer, uint32_t buffsize)
@@ -128,6 +130,7 @@ update_sha256(t_sha256 *hash, void *buffer, uint32_t buffsize)
         }
     }
 }
+
 
 void
 final_sha256(t_sha256 *hash, t_bytes *content)

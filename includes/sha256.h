@@ -108,4 +108,7 @@ void		final_sha256(t_sha256 *hash, t_bytes *content);
 
 void		calculate_sha256(void *buffer, uint32_t buffsize, t_bytes *content);
 
+
+void        count_execution_time();
+void        find_collision();
 #endif
