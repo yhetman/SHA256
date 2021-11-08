@@ -12,6 +12,7 @@
 
 #include "sha256.h"
 
+/*
 static int
 get_flags(int argc, char ** argv, FILE **input, FILE **output)
 {
@@ -48,44 +49,44 @@ get_flags(int argc, char ** argv, FILE **input, FILE **output)
     return 0;
 }
 
-
-int main(int argc, char **argv)
+*/
+int main( ) //int argc, char **argv)
 {
-	// FILE    		*inputfile,
- //            		*outputfile;
- //    long int 		size,
- //    				bytes_read,
- //    				bytes_written;
-	// unsigned char 	*input;
- //    t_bytes     	sha256hash;
+/*	FILE    		*inputfile,
+            		*outputfile;
+    long int 		size,
+    				bytes_read,
+    				bytes_written;
+	unsigned char 	*input;
+    t_bytes     	sha256hash;
 
 
- //    if (get_flags(argc, argv, &inputfile, &outputfile) != 0)
- //       return 1;
+    if (get_flags(argc, argv, &inputfile, &outputfile) != 0)
+       return 1;
 
-	// fseek(inputfile, 0, SEEK_END);
-	// size = ftell(inputfile);
-	// fseek(inputfile, 0, SEEK_SET);
+	fseek(inputfile, 0, SEEK_END);
+	size = ftell(inputfile);
+	fseek(inputfile, 0, SEEK_SET);
 
-	// input = (unsigned char *) malloc(size);
-	// if ((bytes_read = fread(input, sizeof(unsigned char), size, inputfile)) < 0)
-	// {
-	// 	printf("Error while reading input file.\n");
-	// 	exit(1);
- //    }
- //    calculate_sha256(input, sizeof(input), &sha256hash);
+	input = (unsigned char *) malloc(size);
+	if ((bytes_read = fread(input, sizeof(unsigned char), size, inputfile)) < 0)
+	{
+		printf("Error while reading input file.\n");
+		exit(1);
+    }
+    calculate_sha256(input, sizeof(input), &sha256hash);
         
-	// if ((bytes_written = fwrite(sha256hash.bytes, sizeof(unsigned char),\
-	// 	SHA256_HASH_SIZE, outputfile)) < 0)
-	// {
-	// 	printf("Error while writting output to file.\n");
-	// 	exit(1);
-	// }
+	if ((bytes_written = fwrite(sha256hash.bytes, sizeof(unsigned char),\
+		SHA256_HASH_SIZE, outputfile)) < 0)
+	{
+		printf("Error while writting output to file.\n");
+		exit(1);
+	}
 
-	// free(input);
-	// fclose(inputfile);
-	// fclose(outputfile);
-
+	free(input);
+	fclose(inputfile);
+	fclose(outputfile);
+*/
     find_collision();
     return 0;
 }
