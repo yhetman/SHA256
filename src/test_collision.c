@@ -62,7 +62,7 @@ check_hash_list(t_hashes *h, t_hashes *new)
 	while (tmp->next_hash != NULL)
 	{
 		if (compare_sha256(&tmp->hash, &new->hash) == 0)
-			return -1;htop
+			return -1;
 		tmp = tmp->next_hash;
 	}
 	return 1;
