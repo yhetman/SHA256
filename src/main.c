@@ -73,8 +73,9 @@ int main(int argc, char **argv)
     if (collision)
     {
         find_collision();
-        return (0);
+        return 0;
     }
+
 	fseek(inputfile, 0, SEEK_END);
 	size = ftell(inputfile);
 	fseek(inputfile, 0, SEEK_SET);
